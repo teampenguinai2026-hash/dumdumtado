@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "All user accounts:"
+cat /etc/passwd | cut -d: -f1  # [cite: 103]
+
+echo "Number of logged-in user accounts:"
+who | wc -l  # [cite: 104]
+
+echo "Names of currently logged-in users:"
+who | cut -d' ' -f1 | sort | uniq  # [cite: 105]
+
+echo "Groups current user belongs to:"
+groups  # [cite: 106]
