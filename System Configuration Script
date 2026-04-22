@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Logged user: $USER"
+echo "Login name: $LOGNAME"
+echo "Current shell: $SHELL"
+echo "Home directory: $HOME"
+echo "Operating system type: $(uname -o)"
+echo "Current path setting: $PATH"
+echo "Current working directory: $(pwd)"
