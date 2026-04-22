@@ -1,0 +1,9 @@
+#!/bin/bash
+read -p "Enter a number: " num
+case ${#num} in
+    1) echo "Single digit" ;;
+    2) echo "Double digit" ;;
+    3) echo "Three digit" ;;
+    4) echo "Four digit" ;;
+    *) echo "Invalid or more than four digits" ;;
+esac
